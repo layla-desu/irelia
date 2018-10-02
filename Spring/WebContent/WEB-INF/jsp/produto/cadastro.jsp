@@ -7,7 +7,7 @@
 	</jsp:attribute>
 	<jsp:body>
 		<!-- Código da página... -->
-		<h1>Cadastro de Produto</h1>
+		<h3>Cadastro de Produto</h3>
 		<form action="cadastrar" method="post">
 			<div class="form-group">
 			    <label for="titulo">Titulo:</label>

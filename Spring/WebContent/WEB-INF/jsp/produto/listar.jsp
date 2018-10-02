@@ -7,6 +7,7 @@
 		<!-- Código JS... -->
 	</jsp:attribute>
 	<jsp:body>
+		<h4>Produtos:</h4>
 		<table class="table">
 		  <thead>
 		    <tr>
