@@ -7,15 +7,16 @@
 	</jsp:attribute>
 	<jsp:body>
 		<!-- Código da página... -->
-		<h3>Cadastro de Produto</h3>
-		<form action="cadastrar" method="post">
+		<h3>Editar de Produto</h3>
+		<form action="editar" method="post">
+			<input type="hidden" name="id" value="${prod.id }" id="id">
 			<div class="form-group">
 			    <label for="titulo">Titulo:</label>
-			    <input type="text" name="titulo" class="form-control" id="titulo">
+			    <input type="text" name="titulo" class="form-control" id="titulo" value="${prod.titulo }">
 			  </div>
 			  <div class="form-group">
 			    <label for="preco">Preço:</label>
-			    <input type="text" name="preco" class="form-control" id="preco">
+			    <input type="text" name="preco" class="form-control" id="preco" value="${prod.preco }">
 			  </div>
 			<button type="submit" class="btn btn-primary">Salvar</button>
 		</form>

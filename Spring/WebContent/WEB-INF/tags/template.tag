@@ -13,10 +13,9 @@
 </head>
 <body>
 
-	<div class="container">
 		<div class="page-header">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#"><h2>Spring MVC - Exemplo</h2></a>
+			<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+				<a class="navbar-brand" href="/Spring/produto/listar"><h2>Spring MVC - Exemplo</h2></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarNav" aria-controls="navbarNav"
 					aria-expanded="false" aria-label="Toggle navigation">
@@ -24,20 +23,22 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link" href="/Spring/produto/listar">Produtos
-								<span class="sr-only">(current)</span>
+						<li class="nav-item active"><a class="nav-link"
+							href="/Spring/produto/listar">Produtos <span class="sr-only">(current)</span>
 						</a></li>
-						<li class="nav-item"><a class="nav-link" href="/Spring/produto/cadastrar">Cadastrar</a></li>
+						<li class="nav-item"><a class="nav-link"
+							href="/Spring/produto/cadastrar">Cadastrar</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
+	<div class="container">
 		<jsp:doBody />
+		<footer>
+			<p>&copy; Todos os Direitos Reservados</p>
+		</footer>
 	</div>
-	<footer>
-		<p>&copy; Todos os Direitos Reservados</p>
-	</footer>
 	<script src="<c:url value="/resources/js/jquery-3.3.1.min.js"/>"></script>
 	<script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
 	<jsp:invoke fragment="scripts"></jsp:invoke>
