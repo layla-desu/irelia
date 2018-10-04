@@ -61,9 +61,9 @@ public class ProdutoController {
 		return retorno;
 	}
 	
-	@GetMapping("excluir/{id}")
+	@PostMapping("excluir")
 	@Transactional
-	public ModelAndView excluir(@PathVariable("id") long id) throws Exception {
+	public ModelAndView excluir(long id) throws Exception {
 		ModelAndView retorno = new ModelAndView("produto/listar");
 		dao.remover(id);
 		List<Produto> lista = dao.listar();

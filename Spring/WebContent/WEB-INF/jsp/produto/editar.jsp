@@ -7,7 +7,7 @@
 	</jsp:attribute>
 	<jsp:body>
 		<!-- Código da página... -->
-		<h3>Editar de Produto</h3>
+		<h3 class="mt-1">Editar de Produto</h3>
 		<form action="editar" method="post">
 			<input type="hidden" name="id" value="${prod.id }" id="id">
 			<div class="form-group">

@@ -7,7 +7,7 @@
 		<!-- Código JS... -->
 	</jsp:attribute>
 	<jsp:body>
-		<h4>Produtos:</h4>
+		<h4 class="mt-1">Produtos:</h4>
 		<table class="table">
 		  <thead class="table-primary">
 		    <tr>
@@ -23,8 +23,8 @@
 		  			<td>${prod.id }</td>
 		  			<td>${prod.titulo}</td>
 		  			<td>${prod.preco}</td>
-		  			<td><a href="/Spring/produto/editar/${prod.id }">Editar</a> | <a
-							href="/Spring/produto/excluir/${prod.id }" data-toggle="modal" data-target="#myModal">Excluir</a></td>
+		  			<td><a href="/Spring/produto/editar/${prod.id }" class="btn btn-secondary">Editar</a> | <a
+							onclick="idModal.value=${prod.id}" class="btn btn-info text-white" data-toggle="modal" data-target="#myModal">Excluir</a></td>
 		  		</tr>
 		  	</c:forEach>
 		  </tbody>
@@ -43,9 +43,12 @@
 		        <p>Deseja mesmo excluir esse produto?</p>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="submit" value="${prod.id }" class="btn btn-primary">Sim</button>
-		        <button type="button" class="btn btn-secondary"
-							data-dismiss="modal">Cancelar</button>
+		      	<form method="post" action="excluir">
+		      		<input type="hidden" name="id" id="idModal">
+			        <button type="submit" class="btn btn-primary">Sim</button>
+			        <button type="button" class="btn btn-secondary"
+								data-dismiss="modal">Cancelar</button>
+				</form>
 		      </div>
 		    </div>
 		  </div>

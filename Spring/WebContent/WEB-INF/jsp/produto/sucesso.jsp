@@ -7,7 +7,7 @@
 	</jsp:attribute>
 	<jsp:body>
 		<!-- Código da página... -->
-		<div class="alert alert-success" role="alert"><strong>Sucesso!!</strong> ${prod.titulo } foi cadastrado!</div>
+		<div class="alert alert-success mt-1" role="alert"><strong>Sucesso!!</strong> ${prod.titulo } foi cadastrado!</div>
 		<h2>O preço é: R$ ${prod.preco }</h2>
 		
 		<!-- 16:9 aspect ratio -->
